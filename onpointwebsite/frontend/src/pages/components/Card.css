@@ -1,0 +1,105 @@
+@font-face {
+  src: url("../assets/Montserrat-Regular.ttf");
+  font-family: montserrat-regular;
+}
+@font-face {
+  src: url("../assets/Poppins-Regular.ttf");
+  font-family: poppins-regular;
+}
+
+.card-container {
+  border: 1px solid #ccc;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 380px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 0px 0px 3px 0px gray;
+}
+.card-image-container {
+  position: absolute;
+  top: 80px;
+  padding-left: 100px;
+}
+.card-image-container2 {
+  margin-top: 5px;
+}
+.card-image {
+  height: 140px;
+  margin-bottom: 20px;
+}
+.card-image-label {
+  color: #552e30;
+  font-weight: 500;
+  font-family: poppins-regular;
+  font-size: 15px;
+  margin-top: -20px;
+}
+.card-text-main-container {
+  margin-top: 155px;
+}
+.card-title-text {
+  margin-bottom: 20px;
+  font-family: montserrat-regular;
+  font-size: 24px;
+  font-weight: 600;
+}
+.card-list-wrapper {
+  margin-right: 10px;
+}
+.card-list-label {
+  font-family: poppins-regular;
+  font-size: 14px;
+}
+.card-list-content {
+  padding: 10px;
+}
+
+.card-list {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+}
+.card-logo {
+  position: absolute;
+  height: 80px;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.card-logo1 {
+  height: 60px;
+  margin-top: 25px;
+}
+@media screen and (max-width: 1250px) {
+  .card-image {
+    height: 100px;
+  }
+  .card-image-container {
+    top: 100px;
+    padding-left: 95px;
+  }
+  .card-container {
+    height: 500px;
+    width: 317px;
+  }
+  .card-title-text {
+    font-size: 20px;
+  }
+  .card-list-label {
+    font-size: 12px;
+  }
+  .card-logo {
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .card-logo {
+    margin: 0px;
+  }
+  .card-text-main-container {
+    margin-top: 35px;
+  }
+}

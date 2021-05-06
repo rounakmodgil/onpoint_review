@@ -1,0 +1,39 @@
+@font-face {
+  src: url("./assets/BebasNeue-Bold.ttf");
+  font-family: bebasneue-bold;
+}
+
+.singleplatform-maincont {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 50px 100px 50px;
+}
+.singleplatform-heading-container {
+  padding-bottom: 50px;
+}
+.singleplatform-heading1 {
+  font-size: 38px;
+  font-family: bebasneue-bold;
+  text-align: center;
+}
+.singleplatform-heading2 {
+  font-size: 38px;
+  color: #ff4d15;
+  font-family: bebasneue-bold;
+  text-align: center;
+}
+.singleplatform-firstrow {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.singleplatform-image-container {
+  height: 210px;
+  width: 210px;
+}
+@media screen and (max-width: 650px) {
+  .singleplatform-image-container {
+    height: 170px;
+    width: 170px;
+  }
+}

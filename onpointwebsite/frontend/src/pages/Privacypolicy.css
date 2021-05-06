@@ -1,0 +1,15 @@
+.boiler-main {
+  min-height: 80vh;
+}
+.boiler-title-background {
+  height: 40vh;
+  background-color: #fccf08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boiler-header {
+  color: #fff;
+  font-weight: 500;
+  font-family: sans-serif;
+}

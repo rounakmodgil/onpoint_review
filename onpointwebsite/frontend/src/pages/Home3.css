@@ -1,0 +1,114 @@
+@font-face {
+  src: url("./assets/Poppins-Regular.ttf");
+  font-family: poppins-regular;
+}
+@font-face {
+  src: url("./assets/Montserrat-Regular.ttf");
+  font-family: montserrat-regular;
+}
+.home3-section {
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: url("./images/rectorange.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+  flex-wrap: wrap;
+  padding: 50px 40px;
+}
+
+.home3-title-text1 {
+  font-family: montserrat-regular;
+  margin-bottom: 5px;
+  font-size: 36px;
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+.home3-content-text {
+  max-width: 600px;
+  margin-bottom: 40px;
+  font-family: poppins-regular;
+  font-size: 14px;
+  color: #ddd;
+}
+.pizza-image {
+  height: 300px;
+}
+
+.home3-list-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.home3-list-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1250px) {
+  .pizza-image {
+    height: 220px;
+  }
+  .home3-title-text1,
+  .home3-title-text2 {
+    font-size: 28px;
+  }
+  .home3-content-text {
+    font-size: 12px;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .pizza-image {
+    height: 230px;
+  }
+  .home3-section {
+    text-align: center;
+    min-height: 110vh;
+  }
+  .home2-responsive-picture-placer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .home3-custom-class {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pizza-image {
+    height: 180px;
+  }
+
+  .home3-section {
+    height: 0vh;
+  }
+  .home3-title-text1,
+  .home3-title-text2 {
+    font-size: 20px;
+  }
+  .home3-content-text {
+    font-size: 10px;
+    max-width: 98%;
+  }
+  .home3-custom-class {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home3-section {
+    max-height: 30vh;
+  }
+  .home3-custom-class {
+    margin-top: -80px;
+  }
+}

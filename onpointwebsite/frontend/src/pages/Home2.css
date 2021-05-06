@@ -1,0 +1,50 @@
+.home2-section {
+  height: 130vh;
+  background-image: url(./images/home2bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  z-index: 999;
+  flex-wrap: wrap;
+}
+.home2-delivery-container {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  background-color: #fff;
+}
+.home2-delivery-image {
+  height: 100px;
+  flex-direction: row-reverse;
+  animation-name: delivery;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+}
+@keyframes delivery {
+  0% {
+    margin-left: 90%;
+  }
+  100% {
+    margin-left: -30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home2-delivery-image {
+    height: 70px;
+    animation-duration: 4s;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home2-section {
+    height: 150vh;
+  }
+}
