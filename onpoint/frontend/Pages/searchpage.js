@@ -41,7 +41,6 @@ export default function searchpage() {
             borderWidth: 0.4,
             borderColor: '#000',
             borderRadius: 50,
-            padding: 5,
             width: '95%',
             alignItems: 'center',
             margin: 10,
@@ -53,6 +52,16 @@ export default function searchpage() {
           />
           <TextInput style={{flex: 1}}></TextInput>
         </View>
+        <View style={{
+            marginTop: 20,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            marginLeft: 10,
+            marginRight: 10,
+          }}>
+            <View style={{borderColor:"#bbb",width:"49%",height:50, justifyContent:"center", alignItems:"center", borderWidth:1, borderRadius:7, backgroundColor:"#CB202D" }}><Text style={{color:"#fff"}}>Virtual World</Text></View>
+            <View style={{borderColor:"#bbb",width:"49%",height:50, justifyContent:"center", alignItems:"center", borderWidth:1, borderRadius:7 }}><Text>Physical World</Text></View>
+          </View>
         <View
           style={{
             marginTop: 20,
@@ -77,11 +86,11 @@ export default function searchpage() {
                 alignItems: 'center',
               }}>
               <Image
-                source={require('../assets/netflix.png')}
+                source={require('../assets/product.png')}
                 style={physicalWorld ? styles.imageActive : styles.image}
               />
               <Text style={physicalWorld ? styles.textActive : styles.text}>
-                Physcial World
+                Products
               </Text>
             </View>
           </TouchableOpacity>
@@ -97,11 +106,11 @@ export default function searchpage() {
             }}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
-                source={require('../assets/netflix.png')}
+                source={require('../assets/service.jpeg')}
                 style={virtualWorld ? styles.imageActive : styles.image}
               />
               <Text style={virtualWorld ? styles.textActive : styles.text}>
-                Virtual World
+                Services
               </Text>
             </View>
           </TouchableOpacity>
@@ -117,7 +126,7 @@ export default function searchpage() {
             }}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
-                source={require('../assets/netflix.png')}
+                source={require('../assets/entertainment.png')}
                 style={entertainment ? styles.imageActive : styles.image}
               />
               <Text style={entertainment ? styles.textActive : styles.text}>
@@ -137,102 +146,17 @@ export default function searchpage() {
             }}>
             <View style={{justifyContent: 'center', alignItems: 'center'}}>
               <Image
-                source={require('../assets/netflix.png')}
+                source={require('../assets/more.png')}
                 style={products ? styles.imageActive : styles.image}
               />
               <Text style={products ? styles.textActive : styles.text}>
-                Products
+                More
               </Text>
             </View>
           </TouchableOpacity>
         </View>
 
-        <View
-          style={{
-            marginTop: 20,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            marginLeft: 10,
-            marginRight: 10,
-          }}>
-          <TouchableOpacity
-            onPress={() => {
-              setVirtualWorld(false);
-              setPhysicalWorld(false);
-              setEntertainment(false);
-              setProducts(false);
-              setAutomobile(!automobile);
-              setServices(false);
-              setMore(false);
-            }}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/netflix.png')}
-                style={automobile ? styles.imageActive : styles.image}
-              />
-              <Text style={automobile ? styles.textActive : styles.text}>
-                Automobile
-              </Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
-              setVirtualWorld(false);
-              setPhysicalWorld(false);
-              setEntertainment(false);
-              setProducts(false);
-              setAutomobile(false);
-              setServices(!services);
-              setMore(false);
-            }}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/netflix.png')}
-                style={services ? styles.imageActive : styles.image}
-              />
-              <Text style={services ? styles.textActive : styles.text}>
-                Services
-              </Text>
-            </View>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => {
-              setVirtualWorld(false);
-              setPhysicalWorld(false);
-              setEntertainment(false);
-              setProducts(false);
-              setAutomobile(false);
-              setServices(false);
-              setMore(!more);
-            }}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/netflix.png')}
-                style={more ? styles.imageActive : styles.image}
-              />
-              <Text style={more ? styles.textActive : styles.text}>More</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => {
-              setVirtualWorld(false);
-              setPhysicalWorld(false);
-              setEntertainment(false);
-              setProducts(false);
-              setAutomobile(false);
-              setServices(false);
-              setMore(!more);
-            }}>
-            <View style={{justifyContent: 'center', alignItems: 'center'}}>
-              <Image
-                source={require('../assets/netflix.png')}
-                style={more ? styles.imageActive : styles.image}
-              />
-              <Text style={more ? styles.textActive : styles.text}>More</Text>
-            </View>
-          </TouchableOpacity>
-        </View>
+     
       </ScrollView>
     </SafeAreaView>
   );
@@ -246,15 +170,15 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   image: {
-    height: 60,
-    width: 60,
+    height: 40,
+    width: 40,
     borderRadius: 5,
     overflow: 'hidden',
     marginBottom: 5,
   },
   imageActive: {
-    height: 60,
-    width: 60,
+    height: 40,
+    width: 40,
     borderRadius: 5,
     overflow: 'hidden',
     marginBottom: 5,
@@ -265,6 +189,6 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   textActive: {
-    color: '#ffc408',
+    color: '#CB202D',
   },
 });

@@ -25,9 +25,9 @@ export default function profilepage() {
               width: '100%',
               resizeMode: 'contain',
             }}
-            source={require('../assets/bino.jpg')}></ImageBackground>
+            source={require('../assets/whatsnew.png')}></ImageBackground>
         </View>
-        <View style={{height: 48}}>
+        <View style={{height: 40}}>
           <Image
             style={{
               position: 'absolute',
@@ -35,20 +35,38 @@ export default function profilepage() {
               borderColor: '#CB202D',
               borderWidth: 2,
               left: windowWidth / 2 - 48,
-              height: 96,
-              width: 96,
+              height: 80,
+              width: 80,
               borderRadius: 100,
+            resizeMode:"cover"
             }}
-            source={require('../assets/netflix.png')}
+            source={require('../assets/user.jpeg')}
           />
         </View>
-        <View style={{marginTop: 20}}>
-          <Card
-            title="Netflix"
-            subtitle="A Platform to watch movies"
-            rating="3.5"
-            image={require('../assets/netflix.png')}
-          />
+        <View style={{
+            marginTop: 20,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            marginLeft: 10,
+            marginRight: 10,
+          }}>
+            <View style={{borderColor:"#bbb", justifyContent:"center",  }}>
+              <Text style={{fontWeight:"bold"}} >Pombi Nithinsai</Text>
+              <Text  >nithinsai263@gmail.com</Text>
+              </View>
+            <View style={{borderColor:"#bbb", justifyContent:"center", alignItems:"center", }}>
+              <Text style={{fontWeight:"bold", color:"#CB202D"}}>0 Posts</Text>
+              </View>
+          </View>
+        <View style={{ flexDirection:"row",justifyContent:"center",marginLeft:60}}>
+        <ImageBackground
+            style={{
+              height: 280,
+              width: '54%',
+              resizeMode: 'contain',
+            
+            }}
+            source={require('../assets/nothing.png')}></ImageBackground>
         </View>
       </ScrollView>
     </SafeAreaView>

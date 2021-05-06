@@ -53,13 +53,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
-    marginTop: StatusBar.currentHeight,
+
     overflow: 'hidden',
     alignContent: 'center',
     //alignItems:"center",
-    marginHorizontal: 10,
-    marginRight: 15,
-    marginLeft: 15,
+    paddingHorizontal:5
+
+
   },
   details: {
     paddingBottom: 25,
